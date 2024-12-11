@@ -1,0 +1,255 @@
+/* General Layout */
+/* .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+   */
+  /* .card {
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    padding: 1.5rem;
+    background-color: #f7fafc;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2d3748;
+  }
+  
+  .card-content {
+    padding: 2rem;
+  } */
+  
+  /* Form Inputs */
+  /* input[type="text"],
+  input[type="file"],
+  select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fff;
+  } */
+
+  .AddQuestionInp
+  {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fff;
+  }
+  .AddQuestionInpFile
+  {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fff;
+  }
+  
+  /* label {
+    display: block;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+  } */
+  .AddQuestion-Label {
+    display: block;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* input[type="text"]:focus,
+  select:focus {
+    border-color: #3182ce;
+    outline: none;
+  } */
+
+  .AddQuestionInp:focus {
+    border-color: #3182ce;
+    outline: none;
+  }
+  
+  .AddQuestion-Button {
+    padding: 0.75rem 1.5rem;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .AddQuestion-Button:hover {
+    background-color: #2b6cb0;
+  }
+  
+  .AddQuestion-Button:disabled {
+    background-color: #e2e8f0;
+    cursor: not-allowed;
+  }
+  
+  /* Alert Styles
+  .alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    background-color: #fef2f2;
+    border: 1px solid #fed7d7;
+    color: #9b2c2c;
+  }
+  
+  .alert-success {
+    background-color: #f0fff4;
+    border-color: #68d391;
+    color: #2f855a;
+  }
+  
+  .alert-description {
+    font-size: 1rem;
+  } */
+  
+  /* Option Fields
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .option {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .option input[type="text"] {
+    flex: 1;
+  }
+  
+  .option button {
+    margin-top: 0.25rem;
+    align-self: flex-start;
+  }
+  
+  .option .file-upload {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .option input[type="file"] {
+    max-width: 80%;
+  } */
+  
+  /* Button Group */
+  /* .button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  } */
+  
+  /* .add-option {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .add-option button {
+    width: 100%;
+    background-color: #edf2f7;
+    border-color: #cbd5e0;
+    color: #2d3748;
+  }
+  
+  .add-option button:hover {
+    background-color: #e2e8f0;
+  } */
+  
+  /* File input icons */
+  button .icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* .file-upload button {
+    padding: 0.25rem;
+    background-color: #e2e8f0;
+  }
+  
+  .file-upload button:hover {
+    background-color: #cbd5e0;
+  } */
+  
+  /* Flexbox Utility Classes */
+  .flex {
+    display: flex;
+  }
+  
+  .flex-1 {
+    flex: 1;
+  }
+  
+  .gap-4 {
+    gap: 1rem;
+  }
+  
+  .space-y-2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .space-y-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .space-y-6 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .items-start {
+    align-items: flex-start;
+  }
+  
+  .justify-end {
+    justify-content: flex-end;
+  }
+  
+  /* Responsive Design */
+  /* @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .card-content {
+      padding: 1rem;
+    }
+  
+    .button-group {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .add-option {
+      flex-direction: column;
+    }
+  } */
+  

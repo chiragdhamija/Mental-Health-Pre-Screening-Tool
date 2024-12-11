@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire Questions</title>
+</head>
+<body>
+    <h1>Questionnaire Questions</h1>
+    <div id="questions-container"></div>
+
+    <script>
+        // The ID of the questionnaire you want to retrieve questions for
+        const questionnaireId = 'YOUR_QUESTIONNAIRE_ID'; // Replace this with your actual questionnaire ID
+
+        // Fetch the questions from the API
+        async function fetchQuestions() {
+            try {
+                const response = await fetch(`http://localhost:5000/questionnaire/6736785abd6e2a1a7d1dd2aa/questions`, {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    displayQuestions(data);
+                } else {
+                    console.error('Failed to fetch questions');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        // Function to display questions in the DOM
+        function displayQuestions(questions) {
+            console.log(questions)
+            const container = document.getElementById('questions-container');
+            container.innerHTML = '';  // Clear any existing content
+
+            questions.forEach(question => {
+                const questionDiv = document.createElement('div');
+                questionDiv.classList.add('question');
+
+                const questionText = document.createElement('p');
+                questionText.textContent = question.text;  // Assuming question has a "text" field
+                questionDiv.appendChild(questionText);
+
+                // Display question image if available
+                if (question.question_image) {
+                    const questionImage = document.createElement('img');
+                    questionImage.src = question.question_image;
+                    questionImage.alt = 'Question Image';
+                    questionDiv.appendChild(questionImage);
+                }
+
+                // Display options
+                question.options.forEach((option, index) => {
+                    const optionDiv = document.createElement('div');
+                    optionDiv.classList.add('option');
+
+                    const optionText = document.createElement('p');
+                    optionText.textContent = option.text;  // Assuming options have a "text" field
+                    optionDiv.appendChild(optionText);
+
+                    // Display option image if available
+                    if (option.image) {
+                        const optionImage = document.createElement('img');
+                        optionImage.src = option.image;
+                        optionImage.alt = `Option ${index + 1} Image`;
+                        optionDiv.appendChild(optionImage);
+                    }
+
+                    questionDiv.appendChild(optionDiv);
+                });
+
+                container.appendChild(questionDiv);
+            });
+        }
+
+        // Fetch and display questions when the page loads
+        fetchQuestions();
+    </script>
+</body>
+</html>

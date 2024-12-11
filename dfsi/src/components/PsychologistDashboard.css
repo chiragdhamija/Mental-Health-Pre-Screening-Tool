@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4ff;
+  /* Keeping your background color */
+}
+
+.PsychoD-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.Outside {
+  height: 85vh;
+  margin-top: 3vh;
+  border-radius: 12px;
+  border: 0.2vh solid lightgray;
+  width: 75vw;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.Welcome-P {
+  font-size: 4vh;
+  font-weight: bold;
+  margin-top: 5vh;
+  /* Adjusted for spacing */
+  margin-bottom: 2rem;
+  /* Cleaner spacing below */
+  text-align: center;
+  color: #212529;
+  /* Text color */
+}
+
+.card-container-PsychoDash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75vw;
+  margin-top: 5vh;
+  text-align: center;
+  height: 80vh;
+  gap: 2vw;
+}
+
+.main-container-PsychoDash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75vw;
+  /* Fill the container */
+  margin-top: 5vh;
+  text-align: center;
+  height: auto;
+  /* Removed fixed height for responsiveness */
+  gap: 2vw;
+  /* Space between cards */
+}
+
+/* Target the cards inside the main container */
+.main-container-PsychoDash>div {
+  transition: all 0.3s ease-in-out;
+  /* Smooth hover effect */
+  border: 1px solid lightgray;
+  /* Default border */
+  background-color: #ffffff;
+  /* Default background */
+  border-radius: 8px;
+  /* Smooth corners */
+  padding: 1.5rem;
+  /* Inner spacing */
+  cursor: pointer;
+  /* Pointer on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+}
+
+/* Hover effects */
+.main-container-PsychoDash>div:hover {
+  border: 2px solid #3b82f6;
+  /* Blue border */
+  background-color: #e0f2fe;
+  /* Light blue background */
+  transform: translateY(-4px);
+  /* Slight lift */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  /* Enhanced shadow */
+}

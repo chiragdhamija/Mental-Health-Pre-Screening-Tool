@@ -1,0 +1,35 @@
+body {
+    overflow-x: hidden;
+}
+
+.quiz-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* min-height: 100vh; Ensure the entire page is covered */
+    padding-right: 10vw;
+}
+
+.container-QuestionsPage {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100vw;
+    /* height: 65vh; */
+    padding-top: 8vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    border-radius: 10px;
+}
+
+.grid-QuestionsPage {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute the buttons evenly */
+    margin-top: 20px;
+    /* Add space between the questions and the buttons */
+    width: 20vw;
+    /* background-color: yellow; */
+    margin-left: auto;
+    align-self: flex-end;
+}
